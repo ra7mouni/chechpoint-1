@@ -1,0 +1,16 @@
+ALGORITHM sentence
+VAR
+    i,nb,v:integer;
+    str:string;
+BEGIN
+    write("give your sentence.")
+    read(str)
+    nb:=0;
+    v:=0;
+    for i from 0 to str.length-2
+    IF (str[i]=" ") THEN
+        nb:=nb+1;
+    ELSE_IF (str[i]="a" or str[i]="e" or str[i]="y" or str[i]="u" or str[i]="i" or str[i]="o") THEN
+        v:=v+1;
+    END_IF 
+END

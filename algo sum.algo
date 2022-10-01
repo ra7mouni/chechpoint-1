@@ -1,0 +1,16 @@
+ALGORITHM sum
+VAR
+    tab1 : ARRAY_OF INTEGER[n];
+    tab2 : ARRAY_OF INTEGER[p];         
+    s,n,p,i,j:string;
+BEGIN
+    s:=0;
+    for i from 0 to n-1
+    read(tab1[i]);
+    for j from 0 to p-1
+    if (tab1[i]=tab2[j]) THEN
+    s:=s+tab[i];
+    END_IF
+    write(s);
+    
+END
